@@ -1,0 +1,1 @@
+parent sends 5...child gets 5...calculates factorial and returns back to parent. (create two pipes)
