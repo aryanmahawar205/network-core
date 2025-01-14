@@ -1,0 +1,3 @@
+the sender send a couple of messages...the receiver receives all of them and reverses them before displaying
+
+also to stop inputting more messages, the sender types in "end"
