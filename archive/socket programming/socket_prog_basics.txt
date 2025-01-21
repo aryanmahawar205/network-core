@@ -1,0 +1,51 @@
+htonl - host to network long
+htons - host to network short
+inet - internet
+ntop - network to port
+
+127.0.0.1 - self loop back IP address (like a loop in recursion) - loops and communicates back to same machine
+
+IP - logical add.; MAC - physical add.
+
+IP types:
+class A - build public nets (amazon server) and class B - build private nets (lab server)
+
+send(), recv(), write(), read() - EITHER USED BY TCP CLIENT OR SERVERS
+
+sendto(), recvfrom() - EITHER USED BY UDP CLIENT OR SERVERS
+
+12 Sys calls:
+
+1. socket() sys call:
+0 value for protocol means the protocol is chosen automatically based on family and type attributes.
+it is used by both client and servers
+
+2. connect() sys call:
+used only by client and only for TCP proto
+UDP client cannot use connect() sys call
+note: sockaddr - predefined structure in header library; used to store the server address
+note: sockaddr_in - means internet (in)
+
+3. bind() sys call:
+invoked only by a server (TCP or UDP) proto
+
+4. listen() sys call:
+can by invoked only by TCP server
+
+5. accept() sys call:
+can be invoked only by TCP server
+
+6. send()/write() sys call:
+flag set to 0 in args
+
+7. recv()/read() sys call:
+
+8. sendto() sys call:
+
+9. recvfrom() sys call:
+
+10. close()/shutdown() sys call:
+close on successful communication - after a time frame (as the case maybe)
+
+SERVER SHOULD NEVER close()/shutdown() ITSELF.
+CLIENT SHOULD TERMINATE cause the server is meant to constantly listen and respond if required

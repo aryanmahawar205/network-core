@@ -1,0 +1,46 @@
+	
+	IPAddress - a.b.c.d (IPV4 - 32)
+	Port Number - 0 - 65K (SQL - 3306, Tomcat - 8080) 9000
+	
+	Socket : IPAddress + Port
+		  127.0.0.1:8080
+		  192.168.127.35:8080
+
+	TCP Socket - SOCK_STREAM - Connection-Oriented
+	UDP Socket - SOCK_DGRAM - Connetionless
+
+
+BSD(Berkeley Software Development) Sockets
+12 System Calls
+
+			TCP				UDP
+		Server		Client		Server		Client
+
+socket()	y		y		y		y		
+bind()		y				y
+listen()	y
+accept()	y
+connect()			y
+
+send()		y		y
+Process
+recv()		y		y
+
+sendto()					y		y
+recvfrom()					y		y
+close()				y				y
+read()		y		y
+write()		y		y
+
+
+	TCP Server		TCP Client
+	socket(), bind()	socket()
+	listen(), accept()	connect()
+	
+	recv(string)		send(string)
+
+	reverse string (Process)
+
+	send(reversed String)	recv(reversed string)
+				print(reversed string)
+				close()
