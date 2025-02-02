@@ -1,0 +1,9 @@
+Task: (Shared Memory)
+
+octal, binary, hex
+
+server wait for client to send a number.
+once the client sends a number, the server converts it and sends it back to client
+client receives it and displays it as "Revecived from srver (new base number) - "
+
+make it menu driven for octal, binary and hex.
