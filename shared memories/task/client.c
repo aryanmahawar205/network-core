@@ -1,10 +1,6 @@
 // shared memory sender (client) program
 
-#include "header-sharedMemories.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
+#include "D:\network-core\header-sharedMemories.h"
 
 int main() {
     void *shared_memory;

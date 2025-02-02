@@ -1,10 +1,6 @@
 // shared memory receiver (server) program
 
-#include "header-sharedMemories.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
+#include "D:\network-core\header-sharedMemories.h"
 
 void convert_and_send(int choice, int number, char *shared_memory) {
     char result[100];  // Buffer to hold the result
