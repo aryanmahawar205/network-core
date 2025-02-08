@@ -1,4 +1,4 @@
-#include "header.h"
+#include "D:\network-core\message queues\header2.h"
 
 #define MAX_TEXT 512   // maximum length of the message that can be sent
 
